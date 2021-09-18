@@ -1,6 +1,6 @@
 config.py
 venv
-
+db.sqlite3
 
 
 # Created by https://www.toptal.com/developers/gitignore/api/django,visualstudiocode,pycharm
