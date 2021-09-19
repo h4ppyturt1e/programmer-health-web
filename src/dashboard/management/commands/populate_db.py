@@ -18,11 +18,9 @@ class Command(BaseCommand):
         user = User.objects.get(username='user')
 
         # Create the people for the database
-        UserData.objects.create(user=user, name="Ryan", eye_breaks=randint(0, 100), total_break_time=randint(100, 500))
-        UserData.objects.create(user=user, name="S🅱️eve", eye_breaks=randint(0, 100),
-                                total_break_time=randint(100, 500))
-        UserData.objects.create(user=user, name="Guido Van Rossum",
-                                eye_breaks=randint(0, 100), total_break_time=randint(100, 500))
+        UserData.objects.create(user=user, name="Ryan", eye_breaks=randint(0, 100), total_break_time=randint(100, 500), liters_drunk=randint(10, 23), minutes_walked=randint(20, 59))
+        UserData.objects.create(user=user, name="Gertrude", eye_breaks=randint(0, 100), total_break_time=randint(100, 500), liters_drunk=randint(10, 23), minutes_walked=randint(20, 59))
+        UserData.objects.create(user=user, name="Sbeve", eye_breaks=randint(0, 100), total_break_time=randint(100, 500), liters_drunk=randint(10, 23), minutes_walked=randint(20, 59))
 
         # Create an admin
         User.objects.create_superuser(
