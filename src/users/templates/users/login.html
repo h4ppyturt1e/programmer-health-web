@@ -3,7 +3,7 @@
 {% load crispy_forms_tags %}
 
 	<h1>Welcome back! Log In</h1>
-	<form action="{% url 'users:login' %}" method="POST">
+	<form action="{% url 'users:login' %}" method="POST" autocomplete="off">
 		{% csrf_token %}
 		{{ form|crispy }}
 		<br>
