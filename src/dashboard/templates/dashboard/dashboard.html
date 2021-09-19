@@ -1,4 +1,72 @@
 {% extends 'base.html' %}
 {%block content %}
-<h1>big boy test</h1>
+
+<h1>Welcome back, {{ user_data.name }}</h1>
+<br>
+
+<div id="large-card" class="row">
+	<div class="col">
+		<div class="circle">
+			<h1>
+				<i class="fa fa-eye" aria-hidden="true"></i>
+			</h1>
+		</div>
+		<br>
+		<p class="grey-text">Eye Breaks</p>
+		<h1>{{ user_data.eye_breaks }}</h1>
+		<p class="grey-text">This week</p>
+	</div>
+	<div class="col">
+		<div class="circle">
+			<h1>
+				<i class="fa fa-clock" aria-hidden="true"></i>
+			</h1>
+		</div>
+		<br>
+		<p class="grey-text">Minutes worked</p>
+		<h1>{{ user_data.total_break_time }}</h1>
+		<p class="grey-text">This week</p>
+	</div>
+	<div class="col">
+		<div class="circle">
+			<h1>
+				<i class="fa fa-coffee"></i>
+			</h1>
+		</div>
+		<br>
+		<p class="grey-text">Liters Drunk</p>
+		<h1>~{{ user_data.liters_drunk }}</h1>
+		<p class="grey-text">This week</p>
+
+	</div>
+
+</div>
+
+
+<!-- Rest of the cards -->
+<div class="container row align-items-center">
+	<div class="col">
+		<div class="card-small">
+			<h1>
+				15 minutes
+			</h1>
+			<p>Remain until your next eye break.</p>
+			<div class="progress-bar-background">
+				
+			</div>
+
+		</div>
+	</div>
+	<div class="col">
+		<div class="card-small">
+			<h1>
+				Cock and Ball
+			</h1>
+			<p>Torture is my favourite thing!</p>
+		</div>
+	</div>
+
+</div>
+
+
 {%endblock content %}
