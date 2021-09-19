@@ -42,5 +42,8 @@ python src/manage.py makemigrations
 python src/manage.py migrate
 report_result
 
+echo -e "\n*** Attempting to populate the database with fake information.\n"
+src/manage.py populate_db
+
 # Let the user know that the setup has completed.
 echo -e "\nUpdate completed successfully. Have a time!"
