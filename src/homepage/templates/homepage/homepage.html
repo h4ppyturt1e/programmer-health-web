@@ -1,19 +1,30 @@
 {%extends 'base.html'%}
-
+{% load static %}
 {% block content %}
+<div id="landing">
+	<div class="row align-items-center">
+		<div class="col">
+			<div id="title">
+				<h1>
+					Prografit
+				</h1>
+				<p id="title-font">
+					The tool to keep you healthy during long
+					computer sessions.
+				</p>
+				<a href="{% url 'users:login' %}">
+					<button class="custom-primary ">
+						Get Started
+					</button>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Hack the north</title>
-</head>
+				</a>
+			</div>
+		</div>
 
-<body>
-	<h1>
-		Hack the north!
-	</h1>
-
-</body>
+		<div class="col">
+			<img src="{% static 'img/computer.svg' %}" id="computer-img" />
+		</div>
+	</div>
+</div>
 
 {% endblock content %}
